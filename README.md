@@ -5,7 +5,7 @@ This package provides a morphosyntactic tagger for the Croatian language.
 It is possible with a few tweaks to make this tagger configurable, so that it can work on any language (future work).
 
 The tool combines the following components into a pipeline:
-* A morphosyntactic segmentation and analysis tool [moan][moan],
+* A morphosyntactic analyzer constructed using [moan][moan],
 * A morphosyntactic disambiguation library [Concraft][concraft],
 
 The package is the result of the adaptation of the Polish tagger [Concraft-pl][concraft-pl]. All of the code (even this README) has been taken and rewritten to match the needs, but the functionality has stayed mostly the same.
