@@ -13,6 +13,8 @@ The package is the result of the adaptation of the Polish tagger [Concraft-pl][c
 Installation
 ============
 
+Checkout the [release page](https://github.com/vjeranc/concraft-hr/releases/tag/v0.1.0.0) for the needed files if you want to skip the installation process.
+
 You will need [Glasgow Haskell Compiler (GHC)][ghc] and the [Cabal][cabal] tool to build Concraft-hr.  The easiest way to get both [GHC][ghc] and [Cabal][cabal] is to install the latest [Haskell Platform][haskell-platform].
 
 Unless you plan to use a custom preprocessing pipeline that would provide the set of possible tags for each word in a sentence you should use an already constructed analyzer from the [moan][moan] library. On the library page there is a short description of how to construct it with available data.
