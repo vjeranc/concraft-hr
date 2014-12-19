@@ -12,7 +12,7 @@ module NLP.Concraft.Croatian.Server
 
 
 import           Control.Applicative ((<$>))
-import           Control.Monad (forever, void, mapM_)
+import           Control.Monad (forever, void)
 import           Control.Concurrent (forkIO)
 import           System.IO (Handle, hFlush)
 import qualified Network as N
