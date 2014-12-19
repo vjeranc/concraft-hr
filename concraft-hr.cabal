@@ -1,5 +1,5 @@
 name:               concraft-hr
-version:            0.1.0.0
+version:            0.1.0.1
 synopsis:           Part-of-speech tagger for Croatian
 description:
     A part-of-speech tagger for Croatian based on the concraft library.

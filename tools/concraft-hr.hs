@@ -227,7 +227,8 @@ exec Train{..} = do
             Nothing -> return []
             Just x  -> parseTrain tset x
     let alyzer = fmap A.load inAnalyzer
-    analyzer <- fromMaybe (if noAna then undefined else error errMsg) alyzer
+    let ean    = A.create tset A.emptyConf []  -- dirty `undefined` bugfix
+    analyzer <- fromMaybe (if noAna then return ean else error errMsg) alyzer
     let af = analyze $ A.getTags analyzer -- analysis function
     let train1 = if noAna then train0 else map af <$> train0
     let eval1  = if noAna then eval0  else map af <$> eval0
@@ -263,7 +264,8 @@ exec Train{..} = do
 exec Tag{..} = do
     cft    <- C.loadModel inModel
     let alyzer = fmap A.load inAnalyzer
-    analyzer <- fromMaybe (if noAna then undefined else error errMsg) alyzer
+    let ean    = A.create (tagset cft) A.emptyConf [] -- dirty `undefined` bugfix
+    analyzer <- fromMaybe (if noAna then return ean else error errMsg) alyzer
     let tset = tagset cft
     inp <- parseContent tset <$> L.getContents
     out <- R.short analyzer cft $ rq $ buildReq inp
