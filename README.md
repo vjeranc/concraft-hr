@@ -23,7 +23,7 @@ To install Concraft-hr from the official [Hackage repository][hackage-repo] just
 
     cabal install concraft-hr
 
-The `concraft-hr` tool will be installed in the `~/.cabal/bin` directory by default.
+The `concraft-hr` tool will be installed in the `~/.cabal/bin` directory by default. From now on it is assumed that the executable is in the `$PATH`, otherwise, all of the `concraft-hr` commands should be prepended with `./`.
 
 If you want to upgrade Concraft-hr to a newer version you should update the package list first:
 
