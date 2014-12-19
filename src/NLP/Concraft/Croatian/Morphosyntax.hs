@@ -98,7 +98,7 @@ transformToConfig = tcintersperse ':' . tcmap toNine
 -- the tags.
 addAnalysis :: X.Sent Word P.Tag -> [S.Set P.Tag] -> X.Sent Word P.Tag
 addAnalysis = zipWith f
-    where f seg tgs = seg { word = (word seg) { oov = M.null unionWP } -- out-of-dictionary if no analysis
+    where f seg tgs = seg { word = (word seg) { oov = M.null wtagsMap } -- out-of-dictionary if no analysis
                           , tags = X.mkWMap . M.toList $ unionWP}      -- TODO inefficient
             where wtagsMap = M.fromList $ zip (S.toList tgs) [0,0..]   -- weighted analysis tags
                   ptagsMap = X.unWMap . tags $ seg                     -- previous tags

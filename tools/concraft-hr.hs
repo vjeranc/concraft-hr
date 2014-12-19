@@ -259,7 +259,10 @@ exec Train{..} = do
         , onDisk    = disk
         , guessNum  = guessNum
         , r0        = r0 }
-    errMsg = "Please define the path to analyzer or set -noana to true!\n"
+    errMsg = "Please define the path to analyzer or set --noana!\n\
+             \Without the analyzer it isn't known whether the words \
+             \are out-of-dictionary or not, so automatically all are\
+             \ marked as out-of-dictionary. This can impact the performance."
 
 exec Tag{..} = do
     cft    <- C.loadModel inModel
@@ -281,7 +284,10 @@ exec Tag{..} = do
     addTags x = zip x . map (map snd)
     -- | Builds a request and adds the body which will be sent to the server.
     rq x = R.Request { R.rqBody = x }
-    errMsg = "Please define the path to analyzer or set -noana to true!\n"
+    errMsg = "Please define the path to analyzer or set --noana!\n\
+             \Without the analyzer it isn't known whether the words \
+             \are out-of-dictionary or not, so automatically all are\
+             \ marked as out-of-dictionary. This can impact the performance."
     -- | Depending on the no-analysis and marginals boolean values a proper
     -- constructor is chosen. Constructors having an A suffix obviously are
     -- used to indicate that additional analysis is needed.
