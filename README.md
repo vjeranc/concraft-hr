@@ -10,6 +10,8 @@ The tool combines the following components into a pipeline:
 
 The package is the result of the adaptation of the Polish tagger [Concraft-pl][concraft-pl]. All of the code (even this README) has been taken and rewritten to match the needs, but the functionality has stayed mostly the same.
 
+For detailed documentation of the internals checkout the package on [Hackage](http://hackage.haskell.org/package/concraft-hr).
+
 Installation
 ============
 
