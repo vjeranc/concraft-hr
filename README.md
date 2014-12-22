@@ -127,4 +127,4 @@ Run `concraft-hr client --help` to learn more about possible client-mode options
 [ghc-rts]: http://www.haskell.org/ghc/docs/latest/html/users_guide/runtime-control.html "GHC runtime system options"
 [cabal]: http://www.haskell.org/cabal "Cabal"
 [haskell-platform]: http://www.haskell.org/platform "Haskell Platform"
-
+[MultextEast]: http://nl.ijs.si/ME/ "Multext East"
