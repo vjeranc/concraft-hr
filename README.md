@@ -15,7 +15,7 @@ For detailed documentation of the internals checkout the package on [Hackage](ht
 Installation
 ============
 
-Checkout the [release page](https://github.com/vjeranc/concraft-hr/releases/tag/v0.1.0.0) for the needed files if you want to skip the installation process.
+Checkout the [release page](https://github.com/vjeranc/concraft-hr/releases) for the needed files if you want to skip the installation process.
 
 You will need [Glasgow Haskell Compiler (GHC)][ghc] and the [Cabal][cabal] tool to build Concraft-hr.  The easiest way to get both [GHC][ghc] and [Cabal][cabal] is to install the latest [Haskell Platform][haskell-platform].
 
