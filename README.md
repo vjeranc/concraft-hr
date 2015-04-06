@@ -1,5 +1,6 @@
 Concraft-hr
 ===========
+[![Build Status](https://travis-ci.org/vjeranc/concraft-hr.svg)](https://travis-ci.org/vjeranc/concraft-hr)
 
 This package provides a morphosyntactic tagger for the Croatian language.
 It is possible with a few tweaks to make this tagger configurable, so that it can work on any language (future work).
